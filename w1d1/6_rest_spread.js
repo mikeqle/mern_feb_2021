@@ -33,7 +33,15 @@ console.log("REST of the animals: " + otherAnimals);
 //****************************************************************************************************************/
 // making a copy of an object
 //    We spread out all of the values to create a copy of the object
-const personCopy = { ...person };
+let personCopy = { ...person };
+// spread is the same as typing everything again!
+// const personCopy =  { 
+//     firstName: 'Billy', 
+//     lastName: 'Bob', 
+//     email: 'bob@email.com', 
+//     username: 'BillyB', 
+//     password: 'hmmmmmm', 
+// };
 
 personCopy === person
 // This will print false because there are 2 copies in different memory locations

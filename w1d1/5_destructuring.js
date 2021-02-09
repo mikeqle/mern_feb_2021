@@ -36,7 +36,7 @@ var es5FirstAnimal = animals[0];
 // AFTER ES6 - destructuring "automatically" copies a value from the object / array
 //    in to a local variable of the SAME KEY NAME (objects) or based on index (arrays)
 const { email } = person;
-const [es6_firstAnimal] = animals;
+const [ es6_firstAnimal ] = animals;
 
 console.log("\nES5 email: " + es5Email);
 console.log("Destructured email: " + email);
@@ -67,7 +67,7 @@ const { email: es6_email, password } = person;
 //    access the addresses array inside of the person object
 //    use the array destructuring to create 2 new local variables to hold each address
 const { addresses: [ whiteHouse, sherlock ] } = person;
-
+const { city: whCity } = whiteHouse;
 
 console.log("\nDestructured:");
 console.log("\nArray Third animal: " + thirdAnimal);
